@@ -1,0 +1,75 @@
+$title-font-size: 4rem;
+$subtitle-font-size: 3rem;
+$title-alignment: center;
+$subtitle-alignment: center;
+$title-color: white;
+$subtitle-color: white;
+$title-width: 50%;
+$subtitle-width: 50%;
+$title-right-margin: auto;
+$title-left-margin: auto;
+$subtitle-right-margin: auto;
+$subtitle-left-margin: auto;
+$subtitle-color-modifier: #e63946;
+$subtitle-font-weight: bold;
+$footer-text-font-size: 1.5rem;
+
+
+.main__title {
+    font-size: $title-font-size;
+    text-align: $title-alignment;
+    color: $title-color;
+    width: $title-width;
+    margin-left: $title-left-margin;
+    margin-right: $title-right-margin;
+
+}
+
+.main__subtitle {
+    font-size: $subtitle-font-size;
+    text-align: $subtitle-alignment;
+    color: $subtitle-color;
+    width: $subtitle-width;
+    margin-left: $subtitle-left-margin;
+    margin-right: $subtitle-right-margin;
+}
+
+.main__subtitle--modifier {
+    font-size: $subtitle-font-size;
+    text-align: $subtitle-alignment;
+    color: $subtitle-color-modifier;
+    font-weight: $subtitle-font-weight;
+    margin-left: $subtitle-left-margin;
+    margin-right: $subtitle-right-margin;
+}
+
+.footer__text {
+    color: $title-color;
+    font-size: $footer-text-font-size;
+};
+
+$botones: (
+    principal: #e63946,
+    secundatio: #25D366,
+    opcional: #1d3557
+);
+
+@each $boton, $color in $botones {
+    .btn--#{$boton} {
+        background-color: $color;
+    }
+    
+}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.box--blog{
+    @include sizes(25rem,25rem )
+}
+
+.box--home {
+    @include sizes(15rem,15rem )
+}

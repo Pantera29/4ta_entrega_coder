@@ -1,0 +1,44 @@
+.main__title {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main__subtitle {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main__subtitle--modifier {
+  font-size: 3rem;
+  text-align: center;
+  color: #e63946;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto; }
+
+.footer__text {
+  color: white;
+  font-size: 1.5rem; }
+
+.btn--principal {
+  background-color: #e63946; }
+
+.btn--secundatio {
+  background-color: #25D366; }
+
+.btn--opcional {
+  background-color: #1d3557; }
+
+.box--blog {
+  height: 25rem;
+  width: 25rem; }
+
+.box--home {
+  height: 15rem;
+  width: 15rem; }
